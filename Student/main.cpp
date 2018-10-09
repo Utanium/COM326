@@ -16,7 +16,9 @@ int main() {
 	//example of how the finished input will look
 	student Conal{ "Conal", "B00741929", "Computer Science", 2, 67, 76, 81 };
 	Conal.ToString();
-	Conal.CalculatorClassification();
+	cout << Conal.CalculatorClassification(Conal.GetMarkOne()) << endl;
+	cout << Conal.CalculatorClassification(Conal.GetMarkTwo()) << endl;
+	cout << Conal.CalculatorClassification(Conal.GetMarkThree()) << endl;
 
 	student Eamon;
 	//sets the name to eamon
@@ -54,7 +56,9 @@ int main() {
 
 	//displays information as a string
 	Eamon.ToString();
-	Eamon.CalculatorClassification();
+	cout << Eamon.CalculatorClassification(Eamon.GetMarkOne()) << endl;
+	cout << Eamon.CalculatorClassification(Eamon.GetMarkTwo()) << endl;
+	cout << Eamon.CalculatorClassification(Eamon.GetMarkThree()) << endl;
 
 	return 0;
 

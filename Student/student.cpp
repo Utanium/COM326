@@ -114,6 +114,23 @@ void student::ToString() const {
 	std::cout << Name_ << " " << RegID_ << " " << Course_ << " " << YearOfStudy_ << " " << MarkOne_ << " " << MarkTwo_ << " " << MarkThree_ << std::endl;
 }
 
-void student::CalculatorClassification() const
+std::string student::CalculatorClassification(int mark) 
 {
+	if (mark < 40) {
+		return "Fail";
+	}
+	else if (mark < 50) {
+		return "3rd Class";
+	}
+	else if (mark < 60) {
+		return "2nd Class";
+	}
+	else if (mark < 70) {
+		return "2-1";
+	}
+	else {
+		return "First";
+	}
 }
+
+

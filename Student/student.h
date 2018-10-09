@@ -49,6 +49,6 @@ public:
 //initialises ToString and CalculatorClassification
 	void ToString() const;
 
-	void CalculatorClassification() const;
+	std::string CalculatorClassification(int mark);
 
 };
